@@ -1,0 +1,15 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Welcome</h1>
+<button id="helloButton">Click Me!</button>
+<p id="message"></p>
+
+<script>
+    document.getElementById("helloButton").addEventListener("click", function() {
+        document.getElementById("message").innerText = "Hello World";
+    });
+</script>
