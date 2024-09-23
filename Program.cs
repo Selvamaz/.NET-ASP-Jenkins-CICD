@@ -5,6 +5,9 @@ builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
+// Configure the application to listen on port 80
+app.Urls.Add("http://0.0.0.0:80");
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
